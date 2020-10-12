@@ -9,3 +9,5 @@ docker pull hellojukay/sphinx-docker:3.2.1
 OS     : debian buster
 
 Python : 3.10.0a1
+
+sphinx :  3.2.1
