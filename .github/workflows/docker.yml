@@ -16,6 +16,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: hellojukay/sphinx-docker
+          repository: hellojukay/sphinx-docker/sphinx
           tag_with_ref: true
 
