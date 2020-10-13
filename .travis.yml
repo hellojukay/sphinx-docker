@@ -1,0 +1,6 @@
+services:
+  - docker
+script:
+- echo "${dockerhub}" | docker login -u hellojukay --password-stdin
+- docker build -t hellojukay/sphinx-docker:3.2.1 .
+- docker push  hellojukay/sphinx-docker:3.2.1
