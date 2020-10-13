@@ -1,6 +1,8 @@
 # sphinx-docker
 包含 sphinx 工具链的 docker 容器
 
+![image](https://travis-ci.org/hellojukay/sphinx-docker.svg?branch=main)
+
 # pull
 ```bash
 docker pull hellojukay/sphinx-docker:3.2.1
