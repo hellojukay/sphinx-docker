@@ -8,8 +8,28 @@
 docker pull hellojukay/sphinx-docker:3.2.1
 ```
 # 相关信息
-OS     : debian buster
+| 软件   | 版本          |
+| ---    | ---           |
+| OS     | debian buster |
+| Python | 3.10.0a1      |
+| sphinx | 3.2.1         |
 
-Python : 3.10.0a1
-
-sphinx :  3.2.1
+# For gitlab-ci
+```yml
+pages:
+  image: hellojukay/sphinx-docker:3.2.1
+  script:
+    - make html
+    - mv build/html public
+  artifacts:
+    paths:
+      - public
+  tags:
+    - k8s
+```
+# For docker run
+```bash
+docker run --rm -it -v $PWD:/workspace hellojukay/sphinx-docker:3.2.1 bash
+cd /workspace 
+make html
+```
