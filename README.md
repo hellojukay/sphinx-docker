@@ -14,7 +14,7 @@ docker pull hellojukay/sphinx-docker:3.2.1
 | Python | 3.10.0a1      |
 | sphinx | 3.2.1         |
 
-# For gitlab-ci
+# gitlab-ci
 ```yml
 pages:
   image: hellojukay/sphinx-docker:3.2.1
@@ -27,7 +27,7 @@ pages:
   tags:
     - k8s
 ```
-# For docker run
+# docker run
 ```bash
 docker run --rm -it -v $PWD:/workspace hellojukay/sphinx-docker:3.2.1 bash
 cd /workspace 
